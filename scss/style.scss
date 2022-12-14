@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+@import './normalize';
+@import './reset';
+@import './variables';
+@import './mixins';
+@import './blocks/card';
+@import './elements/titles';
+@import './elements/checkbox';
+@import './elements/buttons';
+
+*,
+*:before,
+*:after {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+	box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}

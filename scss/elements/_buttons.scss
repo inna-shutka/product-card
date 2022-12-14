@@ -1,0 +1,61 @@
+.button {
+    width: 127px;
+    height: 40px;
+    background: $Light-Green;
+    border-radius: 4px;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 130%;
+    text-align: center;
+    color: $Dark-Grey;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 700px) {
+    .button {
+        font-size: 0.875rem;
+    }
+}
+
+.button:hover {
+    background: $Green;
+}
+
+.button:focus {
+    background: $Light-Green;
+    border: 1px solid $Dark-Grey;
+}
+
+.button--second {
+    width: 127px;
+    height: 40px;
+    background: $White;
+    border-radius: 4px;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 130%;
+    text-align: center;
+    color: $Dark-Grey;
+    border: 1px solid $Dark-Grey;
+    outline: none;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 700px) {
+    .button--second {
+        font-size: 0.875rem;
+    }
+}
+
+.button--second:hover {
+    text-decoration: underline;
+}
+
+.button--second:focus {
+    text-decoration: none;
+    box-shadow: 0px 0px 0px 1px $Light-Green;
+}

@@ -1,0 +1,106 @@
+.card {
+    @include flex-column-center;
+    background-color: $White;
+    width: 100%;
+    height: 100vh;
+&__container {
+    @include flex-column-center;
+    gap: 20px;
+    border-radius: 10px;
+    width: 300px;
+    padding: 20px;
+    }
+&__image {
+    width: 300px;
+    height: 400px;
+    }
+&__img {
+    width: 300px;
+    height: 400px;
+    filter: drop-shadow(0px 2px 30px rgba(202, 202, 202, 0.1));
+    border-radius: 6px;
+    }
+&__card {
+    background-color: $White;
+    @include flex-column;
+    width: 278px;
+    height: 500px;
+    position: relative;
+    }
+&__exit {
+    width: 12px;
+    height: 12px;
+    border: none;
+    position: absolute;
+    top: -434px;
+    right: -22px;
+    background-color: $White;
+    }
+&__title {
+    @include flex-start;
+    width: 278px;
+    }
+&__price {
+    @include flex-start;
+    width: 78px;
+    }
+&__stars {
+    @include flex-start;
+    width: 120px;
+    gap: 10px;
+    }
+&__info {
+    @include flex-start;
+    width: 278px;
+    }
+    &__size {
+    @include flex-start;
+    width: 189px;
+    }
+    &__color {
+    @include flex-start;
+    width: 128px;
+    }
+    &__buttons {
+    @include flex-start;
+    gap: 24px;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .card {
+        @include flex-row;
+        background-color: $Grey-White;
+        &__container {
+            @include flex-between;
+            gap: 48px;
+            background-color: $White;
+            width: 860px;
+            height: 620px;
+            padding: 60px 48px;
+        }
+        &__image {
+            width: 438px;
+            height: 500px;
+        }
+        &__img {
+            width: 438px;
+            height: 500px;
+        }
+        &__card {
+        background-color: $White;
+        @include flex-column;
+        width: 278px;
+        height: 500px;
+        position: relative;
+        }
+        &__exit {
+            width: 12px;
+            height: 12px;
+            border: none;
+            position: absolute;
+            top: -34px;
+            right: -22px;
+        }
+    }
+}

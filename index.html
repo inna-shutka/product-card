@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="card">
+    <div class="card__container container">
+        <div class="card__image image">
+            <img class="card__img img" src="images/main-img.png" alt="image">
+        </div>
+        <div class="card__card card">
+            <button type="submit" class="card__exit exit">
+                <svg class="card__close close">
+                    <use xlink:href="#exit__icon"/>
+                </svg>
+            </button>
+            <h1 class="card__title title">Nike React Infinity Run Flyknit 3 Mens</h1>
+            <h2 class="card__price price">$159.00</h2>
+            <div class="card__stars stars">
+                <div class="star">
+                    <img src="images/star-one.png" alt="image">
+                </div>
+                <div class="star">
+                    <img src="images/star-one.png" alt="image">
+                </div>
+                <div class="star">
+                    <img src="images/star-one.png" alt="image">
+                </div>
+                <div class="star">
+                    <img src="images/star-four.png" alt="image">
+                </div>
+                <div class="star">
+                    <img src="images/star-five.png" alt="image">
+                </div>
+            </div>
+            <h3 class="card__info info">Treat your feet to the comfort they deserve with the Nike React Infinity Run Flyknit 3. This latest addition grants a soft and stable ride over any distance through it's unique rocker design, shaped to support all 3 phases of your stride.</h3>
+            <div class="card__size size">
+                <div class="size__title size-title">Size:</div>
+                <div class="size__option size-option">
+                    <div class="size-option__item">
+                        <input id="o_one" class="size-option__input" type="radio" value="1" name="option">
+                        <label for="o_one" class="size-option__label"><span class="size-option__text">41</span></label>
+                    </div>
+                    <div class="size-option__item">
+                        <input id="o_two" class="size-option__input" checked type="radio" value="2" name="option">
+                        <label for="o_two" class="size-option__label"><span class="size-option__text">42</span></label>
+                    </div>
+                    <div class="size-option__item">
+                        <input id="o_three" class="size-option__input" type="radio" value="3" name="option">
+                        <label for="o_three" class="size-option__label"><span class="size-option__text">43</span></label>
+                    </div>
+                    <div class="size-option__item">
+                        <input id="o_four" disabled class="size-option__input" type="radio" value="4" name="option">
+                        <label for="o_four" disabled class="size-option__label label--disabled"><span class="size-option__text text--disabled">44</span></label>
+                    </div>
+                    <div class="size-option__item">
+                        <input id="o_five" class="size-option__input" type="radio" value="5" name="option">
+                        <label for="o_five" class="size-option__label"><span class="size-option__text">45</span></label>
+                    </div>
+                </div>
+            </div>
+            <div class="card__color color">
+                <div class="color__title color-title">Color:</div>
+                <div class="color__option color-option">
+                    <div class="color-option__item">
+                        <input id="o_six" class="color-option__input" checked type="radio" value="1" name="color">
+                        <label for="o_six" class="color-option__label"></label>
+                    </div>
+                    <div class="color-option__item">
+                        <input id="o_seven" class="color-option__input" type="radio" value="2" name="color">
+                        <label for="o_seven" class="color-option__label label--orange"></label>
+                    </div>
+                </div>
+            </div>
+            <div class="card__buttons buttons">
+                <button type="submit" class="card__button button">Buy now</button>
+                <button type="submit" class="card__button button--second">Add to cart</button>
+            </div>
+        </div>
+    </div>
+    <svg style="display: none;">
+        <g id="exit__icon" width="12" height="12" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.55764 1.02817C9.97176 0.614049 10.6241 0.594922 11.0146 0.985446C11.4051 1.37597 11.386 2.02826 10.9719 2.44238L7.41419 6.00005L10.8992 9.48503C11.3099 9.89575 11.3263 10.5453 10.9357 10.9358C10.5452 11.3263 9.89568 11.31 9.48496 10.8992L5.99998 7.41426L2.48845 10.9258C2.07433 11.3399 1.42204 11.359 1.03151 10.9685C0.640988 10.578 0.660116 9.9257 1.07424 9.51158L4.58576 6.00005L1.07113 2.48541C0.660404 2.07469 0.64403 1.42515 1.03455 1.03463C1.42508 0.644104 2.07462 0.660478 2.48534 1.0712L5.99998 4.58584L9.55764 1.02817Z" fill="#828282"/>
+        </g>
+    </svg>
+</body>
+</html>

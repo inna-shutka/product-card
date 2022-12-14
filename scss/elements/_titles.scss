@@ -1,0 +1,80 @@
+.title {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 150%;
+    color: $Dark-Grey;
+    margin-bottom: 16px;
+}
+
+.price {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 100%;
+    color: $Dark-Grey;
+    margin-bottom: 12px;
+}
+
+.stars {
+    margin-bottom: 40px;
+}
+
+.star {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.info {
+    font-family: 'Poppins';
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 165%;
+    color: $Dark-Grey;
+    margin-bottom: 40px;
+}
+
+@media screen and (min-width: 700px) {
+    .info {
+        font-size: 0.75rem;
+    }
+}
+
+.size {
+    margin-bottom: 20px;
+}
+
+.size-title {
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 165%;
+    color: $Dark-Grey;
+    margin-right: 10px;
+}
+
+@media screen and (min-width: 700px) {
+    .size-title {
+        font-size: 0.75rem;
+    }
+}
+
+.color {
+    margin-bottom: 60px;
+}
+
+.color-title {
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 165%;
+    color: $Dark-Grey;
+    margin-right: 14px;
+}
+
+@media screen and (min-width: 700px) {
+    .color-title {
+        font-size: 0.75rem;
+    }
+}

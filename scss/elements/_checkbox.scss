@@ -1,0 +1,109 @@
+.size-option {
+    @include flex-start;
+    gap: 10px;
+&__item {
+    position: relative;
+}
+&__input {
+    position: absolute;
+    width: 0;
+	height: 0;
+	opacity: 0;
+}
+&__label {
+    position: relative;
+    @include flex-row;
+    cursor: pointer;
+    width: 24px;
+	height: 24px;
+    border: 1px solid $Grey;
+    outline: none;
+}
+
+&__text {
+    position: absolute;
+    font-family: 'Poppins';
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 165%;
+    text-align: center;
+    color: $Grey;
+}
+}
+
+@media screen and (min-width: 700px) {
+    .size-option__text {
+        font-size: 0.75rem;
+    }
+}
+
+.size-option__input:checked + .size-option__label {
+    background: $Light-Green;
+}
+
+.size-option__item:nth-child(4) {
+    position: relative;
+    color: $Light-Grey;
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.label--disabled:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 50%;
+    right: 0;
+    border-top: 1px solid;
+    border-color: inherit;
+    outline: none;
+    -webkit-transform: skewY(-45deg);
+    -moz-transform: skewY(-45deg);
+    transform: skewY(-45deg);
+    cursor: not-allowed;
+}
+
+.text--disabled {
+    cursor: not-allowed;
+}
+
+.color-option {
+    @include flex-start;
+    gap: 10px;
+&__item {
+    position: relative;
+}
+&__input {
+    position: absolute;
+    width: 0;
+	height: 0;
+	opacity: 0;
+}
+&__label {
+    position: relative;
+    @include flex-row;
+    cursor: pointer;
+    width: 16px;
+	height: 16px;
+    background: $Light-Green;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+}
+}
+
+.label--orange {
+    position: relative;
+    @include flex-row;
+    cursor: pointer;
+    width: 16px;
+	height: 16px;
+    background: $Orange;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+}
+
+.color-option__input:checked + .color-option__label {
+    border: 1px solid $Grey;
+}
